@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <title>HeroScan</title>
+</head>
+
+<body>
+    <!-- As a heading -->
+    <nav class="navbar navbar-dark" style="background-color: #c74626;">
+        <span class="navbar-brand mb-0 h1">HeroScan</span>
+    </nav>
+
+    <div class="jumbotron jumbotron-fluid" style="background-color: #f1f1f0;">
+        <div class="container container-fluid">
+            <h1 class="display-4" style="color: #c74626">Unggah foto pahlawan dan ketahui namanya!</h1>
+            <p class="lead" style="color: #c74626">Terdapat 52 wajah pahlawan yang dapat dikenali oleh HeroScan.</p>
+        </div>
+    </div>
+
+    <div class="container p-5" style="background-color: #c74626;">
+        <div class="row justify-content-md-center">
+            <div class="col col-lg-6">
+                <h1 class="text-center" style="color: white;">Unggah foto pahlawan!</h1>
+                <form enctype='multipart/form-data'>
+                    <div class="input-group mb-3">
+                        <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="picture">
+                            <label class="custom-file-label" for="picture" aria-describedby="upload">Pilih foto</label>
+                        </div>
+                        <div class="input-group-append">
+                            <span class="input-group-text" id="upload">Unggah</span>
+                        </div>
+                    </div>
+                </form>
+                <div class="spinner-border" id="loading" role="status" style="visibility: hidden;">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                <div id="hasil" style="visibility: hidden;">
+                    <img id="foto-pahlawan" alt="Foto pahlawan" width="100%">
+                    <h3 class="lead" id="nama-pahlawan" style="color: white;"></h3>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
